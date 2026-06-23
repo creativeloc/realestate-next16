@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Button from "../ui/Button"
 interface NavbarProps {
   variant?: "transparent" | "solid"
 }
@@ -40,7 +41,12 @@ export default function Navbar({ variant = "transparent" }: NavbarProps) {
           </div>
 
           {/* desktop buttons */}
-          <div className="hidden lg:flex items-center gap-4"></div>
+          <div className="hidden lg:flex items-center gap-4">
+            <Button variant="outline">Login</Button>
+            <Button variant="outline">Add Property</Button>
+          </div>
+
+          {/* mobile menu button */}
         </nav>
       </div>
     </section>
