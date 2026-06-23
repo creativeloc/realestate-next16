@@ -24,18 +24,15 @@ export default function Button({
     <button
       disabled={loading || disabled}
       className={clsx(
-        `
-      inline-flex items-center justify-center gap-2
-      h-13 px-6
-      rounded-2xl
-      font-semibold
-      transition-all duration-300
-      cursor-pointer
-      `,
+        `inline-flex items-center justify-center gap-2 h-13 px-6 rounded-2xl font-semibold transition-all duration-300 cursor-pointer`,
         {
           "bg-primary text-white hover:bg-primary/90": variant === "primary",
-          "border:border-primary hover:text-primary": variant === "outline",
+
+          "border border-black/10 bg-card text-text hover:border-primary hover:text-primary":
+            variant === "outline",
+
           "w-full": fullWidth,
+
           "opacity-70 cursor-not-allowed": loading || disabled
         },
         className
@@ -44,7 +41,14 @@ export default function Button({
     >
       {loading ? (
         <>
-          <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+          <div
+            className="h-4 w-4
+            animate-spin
+            rounded-full
+            border-2
+            border-current
+            border-t-transparent"
+          />
           <span>Loading...</span>
         </>
       ) : (
