@@ -29,7 +29,7 @@ export default function Navbar({ variant = "transparent" }: NavbarProps) {
             <span
               className={isTransparent ? "text-gray-300 pr-2" : "text-text"}
             >
-              Next
+              <span className="font-light">Next</span>
             </span>
             <span className="bg-primary text-white px-1 py-1 rounded-tr-2xl rounded-bl-2xl">
               Estate
