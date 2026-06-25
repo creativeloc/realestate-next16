@@ -1,3 +1,4 @@
+import RecentProperties from "@/components/home/RecentProperties"
 import SearchBox from "@/components/home/SearchBox"
 import FrontendLayout from "@/components/layouts/FrontendLayout"
 import Navbar from "@/components/navbar/Navbar"
@@ -26,7 +27,7 @@ export default function Home() {
               </div>
               <div>
                 {/* heading */}
-                <h2 className="text-4xl font-light leading-tight text-white md:text-6xl lg:text-7xl">
+                <h2 className="text-4xl font-extralight leading-tight text-white md:text-6xl lg:text-7xl">
                   Find A Perfect Place To Call Home
                 </h2>
                 <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <RecentProperties />
     </FrontendLayout>
   )
 }
