@@ -42,7 +42,7 @@ export default function Navbar({ variant = "transparent" }: NavbarProps) {
               <Link
                 key={item}
                 href={item === "Home" ? "/" : `${item.toLowerCase()}`}
-                className={`text-sm font-medium transition hover:text-primary ${isTransparent ? "text-white/80" : "text-text/70"}`}
+                className={`text-sm font-medium transition uppercase hover:text-primary ${isTransparent ? "text-white/80" : "text-text/70"}`}
               >
                 {item}
               </Link>
