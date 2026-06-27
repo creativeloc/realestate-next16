@@ -1,3 +1,5 @@
+"use client"
+
 import clsx from "clsx"
 import { InputHTMLAttributes, TextareaHTMLAttributes } from "react"
 
@@ -11,7 +13,6 @@ interface BaseProps {
 }
 
 type InputProps = BaseProps & InputHTMLAttributes<HTMLInputElement>
-
 type TextareaProps = BaseProps & TextareaHTMLAttributes<HTMLTextAreaElement>
 
 export default function Input({
@@ -75,10 +76,31 @@ export default function Input({
             {...(props as InputHTMLAttributes<HTMLInputElement>)}
           />
         )}
-        {/* <label htmlFor={inputId} className={}>
 
-        </label> */}
+        <label
+          htmlFor={inputId}
+          className={clsx(
+            `
+          absolute
+          left-4
+          top-4
+          text-gray-500
+          text-sm
+          transition-all
+          duration-200
+          pointer-events-none
+          origin-left
+          `,
+            hasValue
+              ? "scale-75 -translate-y-3 text-gray-700"
+              : "peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus: text-gray-700"
+          )}
+        >
+          {label}
+        </label>
       </div>
+
+      {error && <p className="mt-1 text-xs text-red-500">{error}</p>}
     </div>
   )
 }
