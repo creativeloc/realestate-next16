@@ -1,5 +1,6 @@
 import FrontendLayout from "@/components/layouts/FrontendLayout"
 import Navbar from "@/components/navbar/Navbar"
+import EmailForm from "@/components/properties/EmailForm"
 import Image from "next/image"
 import { FaMapMarkerAlt, FaRulerCombined } from "react-icons/fa"
 import { LuBath, LuBedDouble } from "react-icons/lu"
@@ -82,7 +83,7 @@ export default function PropertyPage() {
             </div>
 
             {/* right side */}
-            {/* <EmailForm /> */}
+            <EmailForm />
           </div>
         </div>
       </section>
