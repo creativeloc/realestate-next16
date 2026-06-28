@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google"
 import "./globals.css"
-import RegisterModal from "@/components/modals/RegisterModal"
-import LoginModal from "@/components/modals/LoginModal"
+// import RegisterModal from "@/components/modals/RegisterModal"
+// import LoginModal from "@/components/modals/LoginModal"
 
 const roboto = Roboto({
   variable: "--font-poppins",
@@ -27,8 +27,8 @@ export default function RootLayout({
         cz-shortcut-listen="true"
       >
         {children}
-        <RegisterModal />
-        <LoginModal />
+        {/* <RegisterModal /> */}
+        {/* <LoginModal /> */}
       </body>
     </html>
   )

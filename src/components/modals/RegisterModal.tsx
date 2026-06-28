@@ -1,14 +1,14 @@
-"use client"
+// "use client"
 
-import { useAuthModal } from "@/store/useAuthModalStore"
-import Modal from "./Modal"
+// import { useAuthModal } from "@/store/useAuthModalStore"
+// import Modal from "./Modal"
 
-export default function RegisterModal() {
-  const { openLogin, isRegisterOpen, closeRegister } = useAuthModal()
+// export default function RegisterModal() {
+//   const { openLogin, isRegisterOpen, closeRegister } = useAuthModal()
 
-  return (
-    <Modal title="Register" onClose={closeRegister} isOpen={isRegisterOpen}>
-      <p>Register Modal</p>
-    </Modal>
-  )
-}
+//   return (
+//     <Modal title="Register" onClose={closeRegister} isOpen={isRegisterOpen}>
+//       <p>Register Modal</p>
+//     </Modal>
+//   )
+// }
