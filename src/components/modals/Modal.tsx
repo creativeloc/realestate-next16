@@ -25,7 +25,7 @@ export default function Modal({
   return (
     <div
       aria-hidden={isOpen}
-      className={`fixed inset-0 z-50 items-center justify-center px-4 transition-opacity duration-500
+      className={`fixed inset-0 z-50 flex items-center justify-center px-4 transition-opacity duration-500
     {isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
     `}
     >
